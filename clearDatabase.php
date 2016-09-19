@@ -1,6 +1,6 @@
 <?php 
 
-$conn = new mysqli("classroom.cs.unc.edu", "sclewis", "comp426", "sclewisdb");
+$conn = new mysqli("");//old account not accessible
 $result=$conn->query("DROP TABLE review;");
 if($result){printf("Dropped review.");}
 $result=$conn->query("DROP TABLE assignment;");
