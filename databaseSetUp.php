@@ -1,6 +1,6 @@
 <?php 
 
-$conn = new mysqli("classroom.cs.unc.edu", "sclewis", "comp426", "sclewisdb");
+$conn = new mysqli("");//old account not accessible
 
 $result=$conn->query("CREATE TABLE department (did int NOT NULL AUTO_INCREMENT, name varchar(255), abbreviation varchar(255), PRIMARY KEY (did));");
 $result=$conn->query("CREATE TABLE professor (pid int NOT NULL AUTO_INCREMENT, name varchar(255), did int NOT NULL, PRIMARY KEY (pid), FOREIGN KEY (did) REFERENCES department(did));");
