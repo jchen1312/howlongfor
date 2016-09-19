@@ -1,0 +1,664 @@
+body {
+    margin: 0; 
+    padding: 0;
+    font-family: Arial;
+}
+
+#page-wrap {
+	position:fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#main-content {
+	position:fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+   position: fixed;
+	background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXgCnFy1mvz8ZzNrf_j129-UXOS31Un8zrQIvw4MB3PXVMss8iIw);
+    height: 112px;
+    width: 125px;
+	background-size: 125px 113px;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+#title {
+    background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/sclewis/Codiad/workspace/cs426/Final%20Project/images/HeaderBG.png);
+    width: 100%;
+    height: 64px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    z-index: 1;
+}
+
+#title_text {
+    width: 1425px;
+    position: fixed;
+    height: 60px;
+    left: 170px;
+    font-family: verdana;
+    color: #fff;
+    font-size: 38px;
+    top: 10px;
+    z-index: 2;
+}
+
+#link_bar {
+   background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/jmzhang/Codiad/workspace/cs426/Final/images/Layer2.png);
+    width: 55px;
+    height: 69px;
+    top: 43px;
+    left: 120px;
+    position: fixed;
+    z-index: 3;
+}
+
+#link_bar2{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 62px;
+    left: 150px;
+    z-index: 5;
+}
+
+#footer{
+    background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/sclewis/Codiad/workspace/cs426/Final%20Project/images/FooterBG.png);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    border-top: 3px solid black;
+}
+
+#copyright{
+ 	background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/sclewis/Codiad/workspace/cs426/Final%20Project/images/copyright.png);
+    position: fixed;
+    left:50%;
+    right:50%;
+    transform: translate(-50%, -50%);
+    bottom: 0px;
+    line-height: 15px;
+    height: 32px;
+    width: 372px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li { 
+    display: inline;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+
+select {
+	border:0;
+	font-size: 14px;
+}
+
+#view {
+	position: relative;
+    top: 112px;
+	left: 0;
+	height: 540px;
+	overflow: scroll;
+}
+
+#view:before {
+	background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/sclewis/Codiad/workspace/cs426/Final%20Project/images/study-7859.jpg);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.75;
+    overflow: auto;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.container#main_search {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    z-index: 0;
+    height: 250px;
+}
+
+.container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.9;
+    background-image: url('http://www.hercampus.com/sites/default/files/2010/05/06/Her%20Campus%20Studying%20Main%20_0.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+.container h2 {
+    padding: 50px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.containter img { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+
+.container form {
+    z-index: 5;
+    position: relative;
+    left:35%;
+    bottom: 50px;
+    width: auto;
+    height: 20%;
+
+}
+
+#home_search input{
+	position:relative;
+   	border-radius: 10px;
+    width: 300px;
+    height: 20px;
+    left: 9px;
+    margin:5px;
+    padding: 9px;
+    border: hidden;
+}
+
+.container button {
+    position: relative;
+    border: none;
+    padding: 0;
+    background: none;
+    display: inline;
+    top: 11px;
+    margin:5px;
+    
+}
+
+#buffer {
+	height: 5px;
+	width: 100%;
+	background-color: black;
+}
+
+#display {
+	position: relative;
+	text-align:center;
+	letter-spacing: 10px;
+	font-size:25px;
+	overflow: auto;
+	height: 75%;
+    background: black;
+    z-index:-1;
+    padding-bottom:25px;
+}
+
+#content {
+	margin: 30px;
+	background-color: black;
+	opacity: 0.85;
+	width: 50%;
+	height: auto;
+	position: relative;
+	left: 22%;
+	z-index: 1;
+	border-radius: 20px;
+	overflow: auto;
+}
+
+#content h1 {
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 10px;
+	margin: 10px;
+}
+
+#content p {
+	color:white;
+	font-size:12px;
+	letter-spacing: 3px;
+	padding: 2px;
+	margin: 10px;
+	line-height: 15px;
+	text-align: justify;
+}
+
+#display:before {
+    background: url(http://wwwp.cs.unc.edu/Courses/comp426-f15/users/sclewis/Codiad/workspace/cs426/Final%20Project/images/study-7859.jpg);
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    overflow: scroll;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+#browse_display {
+	height: auto;
+	width: auto;
+	overflow: auto;
+}
+
+.searchContainer {
+	left: 20px;
+	position: relative;
+	height: 280px;
+	width: 35%;
+	margin: 10px;
+	overflow: auto;
+    float: left;
+    border-radius: 20px;
+    background: #000;
+    color: white;
+    opacity: 0.9;
+}
+
+.resultContainer {
+	left: 40%;
+	position: absolute;
+	height: 470px;
+	width: 55%;
+	margin: 10px;
+	overflow: scroll;
+	float: left;
+    border-radius: 20px;
+    background: #000;
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+.results {
+	margin: 20px;
+}
+
+.resultContainer h1 {
+	padding-left: 15px;
+	overflow:auto;
+}
+
+.searchContainer h1 {
+	text-align:center;
+}
+
+.result_clas, .result_sect,.result_assign {
+	padding: 5px;
+	letter-spacing: 2px;
+}
+
+.result_clas:hover, .result_sect:hover, .result_assign:hover {
+	background: lightblue;
+	color: black;
+	opacity: 0.9;
+	border-radius: 20px;
+}
+
+#search {
+	position: absolute;
+	display: block;
+    text-align: center;
+    left: 21%;
+}
+
+#search input, button, select{
+	margin:5px;
+}
+
+#searchbox {
+	padding:6px;
+	font-size:12px;
+	border:hidden;
+	border-radius:6px;
+}
+
+#s_button, #s_reset, #clear, #sub_button { 
+	width: 100px; 
+	padding: 5px; 
+	font-size:14px; 
+	border-radius:8px; 
+	border:none;
+	background-color: gray;
+	color:white;
+	margin-top:20px;
+}
+
+#s_button:hover, #s_reset:hover, #clear:hover, #sub_button:hover {
+	color:black;
+	background-color:white;
+}
+
+.submitContainter {
+    top: 20px;
+	left: 20%;
+	position: relative;
+	height: auto;
+	width: 60%;
+	margin: 10px;
+	overflow: auto;
+    text-align: center;
+    border-radius: 20px;
+    background: #000;
+    color: white;
+    opacity: 0.9;
+    line-height: 30px;
+}
+
+#submit {
+	margin: 20px;
+}
+
+#submit input {
+	padding: 5px;
+	margin: 5px;
+	border: hidden;
+	border-radius: 5px;
+}
+
+#sub_text {
+	font-size: 12px;
+	opacity: 0.8;
+	margin: 0;
+}
+
+#diff_input { width: 25px; }
+
+#time_box { width: 50px; }
+
+#assignment_num { width: 30px; }
+
+#stat_wrapper {
+ 	position: relative;
+	height: 500px;
+	margin-bottom: 20px;
+	overflow:scroll;
+	padding-bottom: 10px;
+}
+
+#ol1,#ol2 {
+	text-align: justify;
+	padding: 5px;
+	margin: 10px;
+	position: relative;
+	left: 18px;
+	line-height:25px;
+}
+
+#ol3, #ol4 {
+	text-align: justify;
+	padding: 5px;
+	margin: 10px;
+	position: relative;
+	left: 18px;
+	line-height:25px;
+}
+
+
+#stats_1, #stats_2, #stats_3, #stats_4 {
+    text-align: center;
+    color: white;
+    position: relative;
+    left: 15%;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    margin: 20px;
+    float:left;
+    background-color: #000;
+    border-radius: 20px;
+    opacity: 0.9;
+}
+
+#assignment_wrapper {
+ 	position: relative;
+	height: 100%;
+	margin-bottom: 20px;
+	overflow:scroll;
+}
+
+.assignment {
+	position: relative;
+	left: 4%;
+	border-radius: 20px;
+	opacity: 0.85;
+	margin: 20px;
+	background-color: #000;
+	color:#fff;
+	text-align: center;
+}
+
+#details_wrapper {
+	margin: 10px;
+	height: auto;
+	overflow: scroll;
+}
+
+.details {
+	padding: 5px;
+}
+
+#a_details {
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 400px;
+}
+#a_stats {
+	overflow: scroll;
+	position: relative;
+	float: left;
+	width: 65%;
+	height: 175px;
+}
+
+.assignment_stats {
+	margin: 3px;
+	padding: 5px;
+	margin-top: 0;
+	padding-top:0;
+}
+
+#a_comments{
+	height: 230px;
+	width: 65%;
+	float: left;
+	padding:15px;
+	overflow: scroll;
+}
+
+#comment {
+	margin: 6px;
+	padding: 10px;
+}
+
+#comment:hover {
+	background-color: red;
+	opacity: 0.9;
+	border-radius:15px;
+}
+
+#browse_text {
+	height: auto;
+	position: relative;
+	margin: 5px;
+	top: 15px;
+	left:20%;
+	padding:0;
+}
+
+#browse_text h1 {
+	padding:0;
+	font-size: 50px;
+	line-height: 0px;
+	letter-spacing: 20px;
+	padding-bottom: 5px;
+	color: white;
+}
+
+#browse_wrapper {
+	position: relative;
+	margin: 20px;
+	width: 60%;
+	height: 310px;
+	overflow: scroll;
+	background-color:black;
+	opacity:0.9;
+	border-radius:20px;
+	padding: 5px;
+	left: 18%;
+	z-index:0;
+}
+
+.browse_dept {
+	position: relative;
+	text-align: center;
+	height: auto;
+	width: auto;
+	border-radius:20px;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.browse_dept:hover {
+	background: lightblue;
+	color: black;
+	opacity: 0.9;
+}
+
+.browse_class{
+	position: relative;
+	text-align: center;
+	height: auto;
+	width: auto;
+	border-radius:20px;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.browse_class:hover {
+	background: lightblue;
+	color: black;
+	opacity: 0.9;
+}
+
+.browse_sect{
+	position: relative;
+	text-align: center;
+	height: auto;
+	width: auto;
+	border-radius:20px;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.browse_sect:hover {
+	background: lightblue;
+	color: black;
+	opacity: 0.9;
+}
+
+.browse_assign{
+	position: relative;
+	text-align: center;
+	height: auto;
+	width: auto;
+	border-radius:20px;
+	background: black;
+	color: white;
+	padding: 5px;
+	margin: 5px;
+}
+
+.browse_assign:hover {
+	background: lightblue;
+	color: black;
+	opacity: 0.9;
+}
+
+
+#over {
+	position: relative;
+	display:block;
+	height: auto;
+	width: auto;
+	left: 46%;
+	z-index:0;
+	color:white;
+	overflow: auto;
+	background-color:black;
+	opacity:0.9;
+	border-radius:15px;
+	padding: 10px;
+	border:none;
+	text-align:center;
+	font-size: 15px;
+}
+
+#over:hover{
+	color:black;
+	background-color:white;
+}

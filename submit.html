@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>How long for Assignment | Submit</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type='text/javascript' src='js/submit.js'></script>
+    </head>
+    <body>
+    <div id="page-wrap">
+        <div id = "header">
+            <div id="logo"></div> <!--need to replace logo-->
+            <div id = "title"></div>
+            <div id = "title_text">H O W • L O N G • F O R • A S S I G N M E N T</div>
+            <div id = "link_bar"></div>
+            <div id="link_bar2">
+                <nav>
+                    <ul class="pages">
+                    <li><a href= "home.html"><img src = 'images/home.png'></a></li>
+                    <li><a href="search.html"><img src = 'images/Search.png'></a></li>
+                    <li><a href="browse.html"><img src = 'images/Browse.png'></a></li>
+                    <li><a href ="stats.html"><img src = 'images/Stats.png'></a></li>
+                    <li><a href="submit.html"><img src = 'images/Submit.png'></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <section id="main-content">
+			<div id="view">
+           		<div class = 'submitContainter'>
+           			<h1>Submit an Assignment</h1>
+           			<form id="submit">
+					<label>Descriptions: </label><input id='desc_box' name = 'description' type="text" width = '400px' height = '50px' required><br>
+					<label id ='sub_text'>Write a description of the assignment</label><br>
+           			<label>Term: </label><input name = 'semester' id='term_box' type="text" placeholder="ie. Fall 2015" required>    
+           			<label>Class: </label><input name = 'class' id='class_box' type="text" placeholder="Enter Class Name..." required><br>
+           			<label>Professor: </label><input name = 'professor' id='prof_box' type="text" placeholder="Enter Professor Name..." required>
+           			<label>Assignment: </label><input name = 'assignment' id = 'assignment_num' type="number" placeholder = '#' min="1" required> <br>
+           			<label>How long did this take? </label><input name = 'time' id = 'time_box' type = 'number' min="0.1" step = '0.1' required><label id = 'sub_text'> Hours</label><br>
+           			<label>Grade Recieved: </label><select name = 'grade'><option value = 'A'>A</option>
+           												   <option value = 'A-'>A-</option>
+           												   <option value = 'B+'>B+</option>
+           												   <option value = 'B'>B</option>
+           												   <option value = 'B-'>B-</option>
+           												   <option value = 'C+'>C+</option>
+           												   <option value = 'C'>C</option>
+           												   <option value = 'C-'>C-</option>
+           												   <option value = 'D+'>D+</option>
+           												   <option value = 'D'>D</option>
+           												   <option value = 'F'>F</option>
+           												   </select>
+                    <br><label>Difficulty: </label><input name = 'difficulty' id = 'diff_box' type="number" min="1" max="10"><label id ='sub_text'>'1' easy and '10' hard</label><br>
+                    <button id = 'sub_button' type ="submit">Submit</button>
+                    <button id = 'clear' type ="reset">Clear</button>
+                    </form>
+           		</div>
+        	</div>
+        </section>
+        
+       </div>
+        <div id = "footer"><div id="copyright"></div></div>
+    </body>
+</html>
